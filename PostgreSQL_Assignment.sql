@@ -11,7 +11,11 @@ CREATE TABLE rangers (
 INSERT INTO rangers ("name", region) VALUES 
 ('Red Ranger', 'Region A'),
 ('Blue Ranger', 'Region B'),
-('Green Ranger', 'Region C')
+('Green Ranger', 'Region C'),
+
+
+
+DROP TABLE rangers
 
 SELECT * FROM rangers
 
@@ -25,7 +29,7 @@ CREATE TABLE species (
 
 INSERT INTO species (common_name, scientific_name, discovery_date, conservation_status) VALUES 
 ('Red Panda', 'Ailurus fulgens', '2025-05-24', 'Endangered'),
-('Blue Whale', 'Balaenoptera musculus', '2025-05-24', 'Endangered'),
+('Blue Whale', 'Balaenoptera musculus', '2025-05-24', 'Vulnerable'),
 ('Green Turtle', 'Chelonia mydas', '2025-05-24', 'Endangered')
 
 
@@ -46,11 +50,12 @@ INSERT INTO sightings (sighting_id, ranger_id, species_id, sighting_time, locati
 (3, 3, 3, '2025-05-24 12:00:00', 'Coral Reef', NULL);
 
 
-
-
-
-
 DROP TABLE sightings
 
 SELECT * FROM sightings
 
+
+INSERT INTO rangers ("name", region) VALUES 
+('Derek Fox', 'Coastal Plains')
+
+SELECT * FROM rangers WHERE "name" = 'Derek Fox'
