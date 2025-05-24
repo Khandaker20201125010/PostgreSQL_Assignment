@@ -43,7 +43,8 @@ CREATE TABLE sightings (
 INSERT INTO sightings (sighting_id, ranger_id, species_id, sighting_time, location, note) VALUES
 (1, 1, 1, '2025-05-24 10:00:00', 'Panda Forest', 'A group of pandas were sighted in the forest'),
 (2, 2, 2, '2025-05-24 11:00:00', 'Ocean Bay', 'A blue whale was observed near the bay'),
-(3, 3, 3, '2025-05-24 12:00:00', 'Coral Reef', 'Green turtles nesting on the beach');
+(3, 3, 3, '2025-05-24 12:00:00', 'Coral Reef', NULL);
+
 
 
 
